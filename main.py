@@ -19,15 +19,15 @@ def input_matrix():
 
 def main():
     while True:
-        print("\nMatrix Calculator")
         print("1. Add matrices")
-        print("2. Multiply matrices")
-        print("3. Transpose matrix")
-        print("4. Determinant")
-        print("5. Solve linear system")
-        print("6. Exit")
+        print("2. Subtract matrices")
+        print("3. Multiply matrices")
+        print("4. Transpose matrix")
+        print("5. Determinant")
+        print("6. Solve linear system")
+        print("7. Exit")
 
-        choice = input("Choose first matrix: ")
+        choice = input("Choose an option: ")
         
         try:
             if choice == "1":
@@ -38,21 +38,26 @@ def main():
             elif choice == "2":
                 a = input_matrix()
                 b = input_matrix()
+                print(a - b)
+
+            elif choice == "3":
+                a = input_matrix()
+                b = input_matrix()
                 print(a * b)
     
-            elif choice == "3":
+            elif choice == "4":
                 a = input_matrix()
                 print(a.transpose())
 
-            elif choice == "4":
+            elif choice == "5":
                 a = input_matrix()
                 print("Determinant:", a.determinant())
 
-            elif choice == "5":
+            elif choice == "6":
                 system = input_matrix()
                 print("Solution:", solve(system))
 
-            elif choice == "6":
+            elif choice == "7":
                 break
 
             else:

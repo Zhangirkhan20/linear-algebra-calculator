@@ -26,6 +26,14 @@ class TestMatrix(unittest.TestCase):
                 [10, 12]
             ]
         )
+    
+    def test_matrix_subtraction(self):
+        a = Matrix([[5, 7], [3, 8]])
+        b = Matrix([[2, 4], [1, 6]])
+
+        result = a - b
+
+        self.assertEqual(result.data, [[3, 3], [2, 2]])
 
     def test_multiplication(self):
         a = Matrix([

@@ -44,6 +44,22 @@ class Matrix:
 
         return Matrix(result)
     
+    def __sub__(self, other):
+            if self.rows != other.rows or self.cols != other.cols:
+                raise ValueError("Matrices must have the same dimensions.")
+
+            result = []
+
+            for i in range(self.rows):
+                new_row = []
+
+                for j in range(self.cols):
+                    value = self.data[i][j] - other.data[i][j]
+                    new_row.append(value)
+
+                result.append(new_row)
+
+            return Matrix(result) 
 
     def __mul__(self, other):
         if self.cols != other.rows:
