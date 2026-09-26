@@ -1,14 +1,14 @@
 ## technologies
 
-- Python 3
-- unittest
-- No external libraries
+Python3
+unittest
+No external libraries
 
 ## what i practiced
 
-- Object-oriented programming
-- Matrix operations
-- Gaussian elimination
-- Recursion
-- Error handling
-- Unit testing
+Object-oriented programming
+Matrix operations
+Gaussian elimination
+Recursion
+Error handling
+Unit testing
